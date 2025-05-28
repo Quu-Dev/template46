@@ -128,6 +128,9 @@ li {
 .mt200{
   margin-top: 200px;
 }
+.mt100{
+  margin-top: 100px;
+}
 .mt60{
   margin-top: 60px;
 }
@@ -414,6 +417,8 @@ li {
 .service__section,
 .flow__section,
 .blog__section,
+.voice__section,
+.schedule__section,
 .privacy-policy__section01,
 .error__section01 {
     width: 100%;
@@ -422,7 +427,14 @@ li {
 }
 
 
-.top__container,.error__container,.privacy-policy__container, .about__container, .service__container, .blog__container {
+.top__container, 
+.error__container,
+.privacy-policy__container, 
+.about__container, 
+.service__container, 
+.blog__container, 
+.voice__container, 
+.schedule__container {
   display: grid;
   justify-items: center;
   margin: 0 200px;
@@ -576,6 +588,8 @@ li {
   .service__container,
   .flow__container,
   .blog__container,
+  .voice__container,
+  .schedule__container,
   .privacy-policy__container {
     margin: 0 clamp(30px, 5vw, 200px);
   }
@@ -1003,49 +1017,77 @@ li {
   margin: 0;
 }
 
-/* BLOG */
-.blog__content__row{
+/* BLOG , VOICE, SCHEDULE*/
+.blog__content__row,
+.voice__content__row,
+.schedule__content__row{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     justify-content: center;
     gap: 40px;
 }
 
-.blog_content{
+.blog_content,
+.voice_content
+.schedule_content{
   width: 100%;
 }
 
-.blog_content .title{
+.blog_content .title,
+.voice_content .title,
+.schedule_content .title{
   font-size: 32px;
   color: var(--main-color);
 }
 
-.blog_content .schedule_date{
+.blog_content .schedule_date,
+.voice_content .schedule_date,
+.schedule_content .schedule_date{
   font-size: 16px;
   color: #999999;
   margin: 0;
 }
 
-.blog_content img{
+.blog_content img,
+.voice_content img,
+.schedule_content img{
   width: 100%;
-  height: 100vh;
   margin-bottom: 60px;
   margin-top: 60px;
+}
+
+.blog_btn-container,
+.voice_btn-container,
+.schedule_btn-container{
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
 }
 
 
 
 @media( max-width: 1080px){
-.blog__content__row{
+.blog__content__row,
+.voice__content__row,
+.schedule__content__row{
     grid-template-columns: 50% 50%;
     gap: 20px;
 }
 }
 
 @media( max-width: 550px){
-.blog__content__row{
+.blog__content__row,
+.voice__content__row,
+.schedule__content__row{
     grid-template-columns: 100%;
     gap: 20px;
 }
+
+.blog_content img,
+.voice_content img,
+.schedule_content img{
+  height: clamp(30vh, 3vw, 100vh);
 }
+}
+
 
