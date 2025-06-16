@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rightcore | About</title>
+    <title>Rightcore | Contact</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
@@ -63,29 +63,70 @@
     </div>
 
     <!-- FOR SECTION 1 CONTAINER -->
-    <div class="about__section01 mt60 mb150">
-        <div class="about__container">
-            <div class="header01">
-                <h1 class="headline"> 私達について</h1>
-                <div class="header-polygon"></div>
+    <div class="contact__section  mt60 mb150">
+        <div class="contact__container">
+        <p class="text center mb60">以下のフォームをご記入の上、送信してください。 後ほど、担当者より連絡させていただきます。</p>
+
+        <div class="contact__list">
+            <div class="contact__left bold">お名前</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <input class="input-text" type="text" placeholder="（例）山田太郎" required>
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">フリガナ</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <input class="input-text" type="text" placeholder="（例）ヤマダタロウ" required>
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">住所</div>
+            <div class="contact__mid bold"></div>
+            <input class="input-text" type="text" placeholder="（例）〇〇県〇〇市〇〇町 10-10" required>
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">電話番号</div>
+            <div class="contact__mid bold"></div>
+            <input class="input-text" type="text" placeholder="（例）090-1234-5678" required>
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">メールアドレス</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <input class="input-text" type="text" placeholder="（例）sample@co.jp" required>
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">ご希望の返信先</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <div class="contact__right">
+            <input type="radio" id="お電話" class="input-radio"  value="お電話"><label class="mr30" for="html">お電話</label>
+            <input type="radio" id="メール" class="input-radio" name="fav_language" value="メール"><label for="html">メール</label>
             </div>
-            <div class="top__content__row">
-                <div class="row__left">
-                    <img src="img/top/img01.jpg" alt="img01" loading="lazy">
-                </div>
-                <div class="row__right">
-                    <p class="title lt">メンタルヘルスの重要性について</p>
-                    <p class="text lt">
-                        現代社会では、ストレスやプレッシャーにさらされることが多く、心の健康を保つことがますます重要になっています。メンタルヘルスは、私たちの生活の質や人間関係、仕事のパフォーマンスにも深く関わる大切な要素です。
-                        このページでは、メンタルヘルスの基本的な知識やセルフケアの方法、専門的なサポートについてご紹介します。心の健康を守るために、まずは正しい理解を深め、自分自身や周りの人々のメンタルウェルビーイングを大切にしましょう。
-                    </p>
-                    <div class="btn-container">
-                        <a href="#" class="seemore-btn">もっと見る</a>
-                    </div>
-                </div>
+            
+        </div>
+
+        <div class="contact__list">
+            <div class="contact__left bold">お問い合せ内容</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <textarea class="input-textbox" placeholder="（例）お問い合せ内容をご記入ください"  required>（例）お問い合せ内容をご記入ください</textarea>
+        </div>
+
+        
+        <div class="contact__list">
+            <div class="contact__left bold">個人情報保護方針</div>
+            <div class="contact__mid bold"><span class="tag">必須</span></div>
+            <div class="contact__right">
+            <input type="checkbox" id="お電話" class="input-radio"  value="お電話"><label class="text color mr30">個人情報保護方針<i class="fa-solid fa-copy"></i></label><label>に同意します</label>
+            </div>
+        </div>
+            <div class="contact__list jc">
+            <a href="#" class="back-btn">入力内容を確認する</a>
             </div>
         </div>
     </div>
+
 
 
     <!-- FOR FOOTER SECTION CONTAINER -->
