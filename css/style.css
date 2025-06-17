@@ -1232,6 +1232,11 @@ li {
 }
 
 
+.contact__img img{
+  width: 100%;
+}
+
+
 
 @media (max-width: 1080px){
 .contact__list:last-child,
