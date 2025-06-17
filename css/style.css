@@ -441,7 +441,6 @@ li {
 .about__container, 
 .service__container, 
 .blog__container, 
-.contact__container,
 .voice__container, 
 .schedule__container {
   display: grid;
@@ -450,6 +449,16 @@ li {
   max-width: 1450px;
   width: 100%;
   gap: 60px;
+}
+
+.contact__container{
+  display: grid;
+  justify-items: center;
+  margin: 0 200px;
+  max-width: 1200px;
+  width: 100%;
+  gap: 60px;
+
 }
 
 .flow__container{
@@ -1089,10 +1098,10 @@ li {
 }
 
   .contact__step{
+    width: 97%;
     display: flex;
     align-items: center;
     padding: 30px clamp(5px, 1vw, 200px);
-    width: 100%;
     justify-content: space-evenly;
     border: 1px var(--secondary-color) solid;
   }
@@ -1128,16 +1137,35 @@ li {
   }
 
  .contact__list{
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 50px;
-  padding: 30px 0;
+  padding-bottom: 30px;
+  border-bottom: 1px solid var(--primary-font);
+}
+
+.contact__left__check{
+  width: 20%;
+}
+
+.contact__right__check{
+  width: 100%;
+}
+
+.contact__list__check{
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 30px;
   border-bottom: 1px solid var(--primary-font);
   width: 100%;
 }
 
-.contact__list:last-child{
+.contact__list:last-child,
+.contact__list__check:last-child{
   border-bottom: none;
+  padding: 0;
 }
 
 .contact__left{
@@ -1146,6 +1174,13 @@ li {
 
 .contact__mid{
   width: 60px;
+}
+.contact__text{
+  max-width: 1200px;
+  width: 100%;
+  padding: 40px 0;
+  border: 1px solid var(--secondary-color);
+  background: rgba(180, 216, 232, 0.10);
 }
 
 .tag{
@@ -1191,28 +1226,6 @@ li {
   height: 18.007px;
 }
 
-.contact-btn-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.contact__left__check{
-  width: 20%;
-}
-
-.contact__right__check{
-  width: 100%;
-}
-
-.contact__list__check{
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding: 30px 0;
-  border-bottom: 1px solid var(--font-color-primary);
-}
-
 .jc{
   justify-content: center;
 }
@@ -1229,7 +1242,7 @@ li {
   .contact__list__check{
     display: flex;
     gap: 20px;
-    padding-bottom: 15px;
+    padding-top: 0;
     flex-direction: column;
     align-items: flex-start;
   }
