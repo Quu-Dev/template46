@@ -427,6 +427,7 @@ li {
 .contact__section,
 .voice__section,
 .schedule__section,
+.sitemap__section,
 .privacy-policy__section01,
 .error__section01 {
     width: 100%;
@@ -451,7 +452,8 @@ li {
   gap: 60px;
 }
 
-.contact__container{
+.contact__container,
+.sitemap__container{
   display: grid;
   justify-items: center;
   margin: 0 200px;
@@ -597,6 +599,7 @@ li {
   .contact__container,
   .voice__container,
   .schedule__container,
+  .sitemap__container,
   .privacy-policy__container {
     margin: 0 clamp(30px, 5vw, 200px);
   }
@@ -1266,6 +1269,38 @@ li {
 .contact__left__check {
     width: 60%;
 }
+}
+
+.page {
+  width: 100%;
+  transition: ease-out .3s;
+}
+
+.page:hover{
+  transition: ease-in .3s;
+  opacity: 50%;
+}
+
+#list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sitemap-left{
+  display: flex;
+  align-items: center;
+}
+
+.sitemap-title{
+  font-weight: 700;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.sitemap-subtitle{
+  color: rgba(21, 21, 11, 0.50);
+  margin: 0;
 }
 
 
