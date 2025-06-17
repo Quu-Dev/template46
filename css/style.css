@@ -1166,6 +1166,7 @@ li {
 .contact__list__check:last-child{
   border-bottom: none;
   padding: 0;
+  
 }
 
 .contact__left{
@@ -1233,6 +1234,10 @@ li {
 
 
 @media (max-width: 1080px){
+.contact__list:last-child,
+.contact__list__check:last-child{
+  align-items: center;
+}
   .contact__list{
     flex-wrap: wrap;
     row-gap: 20px;
